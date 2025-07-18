@@ -1,0 +1,134 @@
+body {
+  background: #f7f8fa;
+  font-family: 'Segoe UI', Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.app-container {
+  max-width: 500px;
+  margin: 40px auto;
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.08);
+  padding: 32px 24px;
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 24px;
+}
+
+.add-todo-form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 28px;
+}
+
+.add-todo-form input,
+.add-todo-form textarea,
+.add-todo-form select {
+  padding: 10px;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  font-size: 1rem;
+  transition: border 0.2s;
+}
+
+.add-todo-form input:focus,
+.add-todo-form textarea:focus,
+.add-todo-form select:focus {
+  border-color: #6366f1;
+  outline: none;
+}
+
+.add-todo-form button {
+  background: #6366f1;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  padding: 10px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.add-todo-form button:hover {
+  background: #4f46e5;
+}
+
+.todo-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.todo-item {
+  background: #f3f4f6;
+  border-radius: 8px;
+  padding: 16px;
+  margin-bottom: 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.03);
+  position: relative;
+}
+
+.todo-title {
+  font-weight: 600;
+  font-size: 1.1rem;
+  color: #22223b;
+}
+
+.todo-description {
+  color: #4b5563;
+  font-size: 0.98rem;
+}
+
+.todo-priority {
+  font-size: 0.92rem;
+  font-weight: 500;
+  padding: 2px 8px;
+  border-radius: 4px;
+  display: inline-block;
+}
+
+.todo-priority.low {
+  background: #d1fae5;
+  color: #065f46;
+}
+
+.todo-priority.medium {
+  background: #fef9c3;
+  color: #92400e;
+}
+
+.todo-priority.high {
+  background: #fee2e2;
+  color: #991b1b;
+}
+
+.delete-btn {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  background: transparent;
+  border: none;
+  color: #d11a2a;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: color 0.2s;
+}
+
+.delete-btn:hover {
+  color: #a10d1a;
+}
+
+@media (max-width: 600px) {
+  .app-container {
+    padding: 16px 4px;
+  }
+}
